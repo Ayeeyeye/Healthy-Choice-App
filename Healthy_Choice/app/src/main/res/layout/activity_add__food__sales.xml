@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".Add_Food_Sales">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="693dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="24dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="1dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="-80dp"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:scrollbars="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="90dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/quicksand_bold"
+                    android:text="Add Food Sales"
+                    android:textColor="#5C5757"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/food_sales_etDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@android:color/transparent"
+                    android:capitalize="words"
+                    android:drawableEnd="@drawable/ic_baseline_date_range_24"
+                    android:drawableRight="@drawable/ic_baseline_description_24"
+                    android:drawableTint="#1D8348"
+                    android:enabled="true"
+                    android:fontFamily="@font/quicksand_medium"
+                    android:hint="Date (mon-dd-yy)"
+                    android:padding="15dp"
+                    android:textColor="#5C5757"
+                    android:textColorHint="#5C5757"
+                    android:textStyle="normal" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="#1D8348" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginEnd="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Category :"
+                        android:textColor="#757575"
+                        android:textSize="17dp"
+                        android:fontFamily="@font/quicksand_medium"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="10dp"></TextView>
+
+                    <com.jaredrummler.materialspinner.MaterialSpinner
+                        android:id="@+id/select_category"
+                        android:layout_width="185dp"
+                        android:layout_height="60dp"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginLeft="30dp"
+                        android:hint="Pick"
+                        android:spinnerMode="dropdown"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        app:ms_hint_color="#000"
+                        app:ms_arrow_tint="#1D8348" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/food_sales_etProductCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@android:color/transparent"
+                    android:capitalize="words"
+                    android:drawableEnd="@drawable/ic_baseline_qr_code_24"
+                    android:drawableRight="@drawable/ic_baseline_description_24"
+                    android:drawableTint="#1D8348"
+                    android:enabled="true"
+                    android:fontFamily="@font/quicksand_medium"
+                    android:hint="Product Code"
+                    android:padding="15dp"
+                    android:textColor="#5C5757"
+                    android:textColorHint="#5C5757"
+                    android:textStyle="normal" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="#1D8348" />
+
+                <EditText
+                    android:id="@+id/food_sales_etFoodName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@android:color/transparent"
+                    android:capitalize="words"
+                    android:drawableEnd="@drawable/ic_baseline_short_text_24"
+                    android:drawableRight="@drawable/ic_baseline_description_24"
+                    android:drawableTint="#1D8348"
+                    android:enabled="true"
+                    android:fontFamily="@font/quicksand_medium"
+                    android:hint="Food Name"
+                    android:padding="15dp"
+                    android:textColor="#5C5757"
+                    android:textColorHint="#5C5757"
+                    android:textStyle="normal" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="#1D8348" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginEnd="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Size :"
+                        android:textColor="#757575"
+                        android:textSize="17dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/quicksand_medium"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="10dp"></TextView>
+
+                    <com.jaredrummler.materialspinner.MaterialSpinner
+                        android:id="@+id/select_size"
+                        android:layout_width="185dp"
+                        android:layout_height="60dp"
+                        android:layout_marginStart="90dp"
+                        android:layout_marginLeft="30dp"
+                        android:hint="Pick"
+                        android:spinnerMode="dropdown"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        app:ms_hint_color="#000"
+                        app:ms_arrow_tint="#1D8348" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/food_sales_etQuantitySales"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@android:color/transparent"
+                    android:capitalize="words"
+                    android:drawableEnd="@drawable/ic_baseline_production_quantity_limits_24"
+                    android:drawableRight="@drawable/ic_baseline_description_24"
+                    android:drawableTint="#1D8348"
+                    android:enabled="true"
+                    android:fontFamily="@font/quicksand_medium"
+                    android:hint="Quantity Sales"
+                    android:padding="15dp"
+                    android:textColor="#5C5757"
+                    android:textColorHint="#5C5757"
+                    android:textStyle="normal" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="#1D8348" />
+
+                <EditText
+                    android:id="@+id/food_sales_etTotalSales"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="10dp"
+                    android:autoText="true"
+                    android:background="@android:color/transparent"
+                    android:capitalize="words"
+                    android:drawableEnd="@drawable/ic_baseline_request_quote_24"
+                    android:drawableRight="@drawable/ic_baseline_description_24"
+                    android:drawableTint="#1D8348"
+                    android:enabled="true"
+                    android:fontFamily="@font/quicksand_medium"
+                    android:hint="Total Sales"
+                    android:padding="15dp"
+                    android:textColor="#5C5757"
+                    android:textColorHint="#5C5757"
+                    android:textStyle="normal" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="#1D8348" />
+
+                <Button
+                    android:id="@+id/save_btn"
+                    android:layout_width="320dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/reg_btn_style"
+                    android:onClick="Save"
+                    android:text="Save"
+                    android:textColor="#ffffff"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/et_description" />
+            </LinearLayout>
+        </ScrollView>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</ScrollView>

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1D8348"
+    tools:context=".Today_Sales">
+
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="410dp"
+        android:layout_height="693dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="24dp"
+        android:fillViewport="true"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="1dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-100dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="110dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/quicksand_bold"
+                    android:text="Add Product Sales"
+                    android:textColor="#fff"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/et_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:background="@android:color/transparent"
+                    android:drawableEnd="@drawable/ic_baseline_date_range_24"
+                    android:drawableRight="@drawable/ic_round_category_24"
+                    android:drawableTint="#1D8348"
+                    android:enabled="true"
+                    android:fontFamily="@font/quicksand_medium"
+                    android:hint="Date (mm/dd/yy)"
+                    android:padding="15dp"
+                    android:textColor="#fff"
+                    android:textColorHint="#5C5757"
+                    android:textStyle="normal" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="40dp"
+                    android:background="#1D8348" />
+
+                <EditText
+                    android:id="@+id/et_totalSales"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:background="@android:color/transparent"
+                    android:drawableEnd="@drawable/ic_baseline_request_quote_24"
+                    android:drawableRight="@drawable/ic_baseline_description_24"
+                    android:drawableTint="#1D8348"
+                    android:enabled="true"
+                    android:fontFamily="@font/quicksand_medium"
+                    android:hint="Total Sales"
+                    android:padding="15dp"
+                    android:textColor="#5C5757"
+                    android:textColorHint="#5C5757"
+                    android:textStyle="normal" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="40dp"
+                    android:background="#1D8348" />
+
+
+
+
+                <EditText
+                    android:id="@+id/et_topProduct"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:background="@android:color/transparent"
+                    android:drawableEnd="@drawable/ic_round_category_24"
+                    android:drawableRight="@drawable/ic_baseline_description_24"
+                    android:drawableTint="#1D8348"
+                    android:enabled="true"
+                    android:fontFamily="@font/quicksand_medium"
+                    android:hint="Top Product Sold"
+                    android:padding="15dp"
+                    android:textColor="#5C5757"
+                    android:textColorHint="#5C5757"
+                    android:textStyle="normal" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="40dp"
+                    android:background="#1D8348" />
+
+                <EditText
+                    android:id="@+id/et_productCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:background="@android:color/transparent"
+                    android:drawableEnd="@drawable/ic_baseline_qr_code_24"
+                    android:drawableRight="@drawable/ic_baseline_description_24"
+                    android:drawableTint="#1D8348"
+                    android:enabled="true"
+                    android:fontFamily="@font/quicksand_medium"
+                    android:hint="Product Code"
+                    android:padding="15dp"
+                    android:textColor="#5C5757"
+                    android:textColorHint="#5C5757"
+                    android:textStyle="normal" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="40dp"
+                    android:background="#1D8348" />
+
+                <EditText
+                    android:id="@+id/et_productName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:background="@android:color/transparent"
+                    android:drawableEnd="@drawable/ic_baseline_short_text_24"
+                    android:drawableRight="@drawable/ic_baseline_description_24"
+                    android:drawableTint="#1D8348"
+                    android:enabled="true"
+                    android:fontFamily="@font/quicksand_medium"
+                    android:hint="Product Name"
+                    android:padding="15dp"
+                    android:textColor="#5C5757"
+                    android:textColorHint="#5C5757"
+                    android:textStyle="normal" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="40dp"
+                    android:background="#1D8348" />
+
+                <EditText
+                    android:id="@+id/et_quantity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:background="@android:color/transparent"
+                    android:drawableEnd="@drawable/ic_baseline_production_quantity_limits_24"
+                    android:drawableRight="@drawable/ic_baseline_description_24"
+                    android:drawableTint="#1D8348"
+                    android:enabled="true"
+                    android:fontFamily="@font/quicksand_medium"
+                    android:hint="Quantity"
+                    android:padding="15dp"
+                    android:textColor="#5C5757"
+                    android:textColorHint="#5C5757"
+                    android:textStyle="normal" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="40dp"
+                    android:background="#1D8348" />
+
+                <Button
+                    android:id="@+id/save_btn"
+                    android:layout_width="320dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="48dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/reg_btn_style"
+                    android:text="Save"
+                    android:onClick="Insert"
+                    android:textColor="#ffffff"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/et_description" />
+
+
+                />
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

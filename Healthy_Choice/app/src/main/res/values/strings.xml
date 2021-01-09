@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Healthy Choice</string>
+
+    <string-array name="sort">
+        <item>Total Sales (Highest to Lowest)</item>
+        <item>Total Sales (Lowest to Highest)</item>
+    </string-array>
+
+    <string-array name="sort_foodsales">
+        <item>Total Sales (Highest to Lowest)</item>
+        <item>Total Sales (Lowest to Highest)</item>
+        <item>Category (All-Time)</item>
+        <item>Category (For Heart)</item>
+        <item>Category (Vegan)</item>
+        <item>size (Regular Order Size)</item>
+        <item>Size (Overload)</item>
+        <item>Size (Special and Solo)</item>
+        <item>Size (Barkada)</item>
+    </string-array>
+
+    <string-array name="sort_drinksales">
+        <item>Total Sales (Highest to Lowest)</item>
+        <item>Total Sales (Lowest to Highest)</item>
+        <item>Category (Guilt-Free)</item>
+        <item>Category (Hot/Heart-Warming)</item>
+        <item>Category (Non-Dairy)</item>
+        <item>Category (Banana Smoothies)</item>
+        <item>Category (Fresh and Pure Detox)</item>
+        <item>Size (Grande)</item>
+        <item>Size (Venti)</item>
+        <item>Size (Regular Size)</item>
+
+    </string-array>
+
+</resources>
+

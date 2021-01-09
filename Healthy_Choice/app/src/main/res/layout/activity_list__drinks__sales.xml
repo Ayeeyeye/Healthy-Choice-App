@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".List_Drinks_Sales"
+    android:background="#D8D8D8">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:background="#1D8348"
+        android:gravity="center"
+        android:padding="7dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/quicksand_bold"
+            android:text="Drinks and Desserts Sales"
+            android:textColor="#fff"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tv_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="31dp"
+            android:fontFamily="@font/quicksand_bold"
+            android:text="Healthy Choice Cafe"
+            android:textColor="#fff"
+            android:textSize="14dp" />
+
+
+
+        <ImageView
+            android:id="@+id/img_add_btn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/plus"
+            android:layout_marginStart="260dp"
+            android:layout_marginLeft="270dp"
+            android:layout_marginTop="6dp" />
+
+
+        <ImageView
+            android:id="@+id/img_sort_btn_ds"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/sort"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="6dp" />
+
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/drinks_sales_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+</LinearLayout>
